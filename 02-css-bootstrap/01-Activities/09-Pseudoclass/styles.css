@@ -1,0 +1,14 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    /* font-size: bold; */
+    color: black;
+    opacity: 1;
+    
+
+}
+h1:hover{
+    color:red;
+    opacity: .5;
+
+
+}
