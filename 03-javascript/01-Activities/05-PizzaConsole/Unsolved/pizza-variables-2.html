@@ -8,20 +8,27 @@
     
     <script type="text/javascript">
 
-    // Variables
-    var name = "Joe Frasier";
-    var pizzaCount = 15;
-    var isHungry = true;
-    var totalCost = pizzaCount * 5.00;
+    var userInput = "";
+var wins = 0;
+var loses = 0;
+var gamefinish = true;
+var artist={
+        artist: ["areial","jason","greg"],
 
-    // Instructions: Replace each of the "alert" functions below with "console.log()"
-    console.log("Welcome: " + name);
+}
+// Set up game
+// $("#word").remove();
+var artistLetters = "";
+var randArtist = artist.artist[Math.floor(Math.random()*artist.artist.length)];
+for(var i = 0; i < randArtist.length; i++ ){
+    var artistLetters = ("_ " + artistLetters);     
+    // console.log(randArtist.charAt(i))
+    // console.log(artistLetters)
+   
 
-    console.log("Pizzas cost $5 each");
+}
+console.log(artistLetters)
 
-    console.log("Your total is: $" + totalCost);
-
-    console.log("Still Hungry: " + isHungry);
 
     </script>
     
