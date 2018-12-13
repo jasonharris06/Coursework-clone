@@ -4,10 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Fridge Magnets</title>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.js"
-  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-  crossorigin="anonymous"></script>
 </head>
 
 <!-- CSS Styles (These styles are provided to you. Don't touch these!) -->
@@ -71,16 +67,6 @@
       // =================================================================================
 
       // 1. Create a for-loop to iterate through the letters array.
-      for (i = 0; i < letters.length; i++) {
-       var letterBtn = $("<button>");
-       $(letterBtn).addClass("letter-button letter letter-button-color");
-       $(letterBtn).attr("data-letter", letters[i]);
-       $(letterBtn).text(letters[i]);
-       $("#buttons").append(letterBtn);
-
-     }
-
-
 
       // Inside the loop...
 
@@ -98,13 +84,7 @@
 
       // MAJOR TASK #2: ATTACH ON-CLICK EVENTS TO "LETTER" BUTTONS
       // =================================================================================
-        $(".letter-button").on("click",function(){
-        var fridgeMagnet = $("<div>");
-        $(fridgeMagnet).addClass("letter fridge-color");
-        $(fridgeMagnet).text($(this).attr("data-letter"));
-        //$(this) grabs whatever just got clicked
-        $("#display").append(fridgeMagnet);
-        });
+
       // 7. Create an "on-click" event attached to the ".letter-button" class.
 
       // Inside the on-click event...
@@ -127,10 +107,8 @@
       // Inside the on-click event...
 
       // 13. Use the jQuery "empty()" method to clear the contents of the "#display" div.
-      $("#clear").on("click",function(){
-        $("#display").empty();
+
     });
-  });
   </script>
 </body>
 

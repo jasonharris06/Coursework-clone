@@ -67,19 +67,3 @@ var unsortedArr = [
   292, 332, 209, 244, 196, 179, 472, 279, 40, 486, 270, 185,
   181, 485, 495, 81, 169, 294, 79, 400, 92, 104, 249
 ];
- $("#go").on("click", function(unsortedArr){
-    var isSorted = false;
-    var lastUnsorted = unsortedArr.length - 1;
-    while(!isSorted){
-      isSorted = true;
-      for (var i = 0; i < lastUnsorted; i++){
-        if (unsortedArr[i] > unsortedArr[i - 1]){
-          swap(unsortedArr, i, i+1)
-          isSorted = false;
-        }
-      }
-      lastUnsorted--;
-    }
-    $("#result").html(unsortedArr);
- });
- 

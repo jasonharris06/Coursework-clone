@@ -17,6 +17,8 @@
   <h3 id="grilledcheese">Grilled Cheese</h3>
   <h3 id="roastbeef">Roast Beef</h3>
 
+  <h1 id="pbjScore"></h1>
+
   <script type="text/javascript">
 
     // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
@@ -29,9 +31,9 @@
       // ====================================================================
       // Here we create variables for tracking the number of sandwiches eaten
       // ...
-        var PBJnum = 0;
-        var grillCheedNum = 0;
-        var roastBeefNum= 0;
+    var pbjCounter = 0;
+    var grilledCounter = 0;
+    var roastCounter = 0; 
 
       // ...
 
@@ -40,24 +42,23 @@
       // Here we create various on "click" functions which capture the clicks
       // Inside each click event is the code to create an alert, update the counter, then show the updated count.
       // ...
-      $("#pbj").on("click", function() {
-        alert("Im a PBJ eat me");
-        if("click"===true){
-          PBJnum++;
-        }
+      $("#pbj").on("click", function(){
+        alert("love me some PB&J")
+        pbjCounter++;
 
-               
       });
-      $("#grilledcheese").on("click", function() {
-        alert("I've been clicked!");
-        var newDiv = $("<div>");
-        newDiv.text("Eaten" + PBJnum++, "times");
-        
-      });
-      $("#roastbeef").on("click", function() {
-        alert("I've been clicked!");
-        sandNum+=1;
-      });
+
+      $("#grilledcheese").on("click", function () { 
+        alert("get down on a grilled chesse")
+        grilledCounter++
+       })
+
+      $("#roastbeef").on("click", function ( ) { 
+        alert("every once and while this is good!")
+        roastCounter++
+       })
+
+       $("#pbjScore").html(pbjCounter);
       // ...
 
     });
